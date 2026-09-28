@@ -3,6 +3,7 @@ plugins {
     id("idea")
     id("net.fabricmc.fabric-loom")
     id("com.gradleup.shadow") version "8.3.0"
+    id("com.gradleup.shadow") version "9.4.2"
 }
 
 val minecraftVersion: String by rootProject.extra
@@ -21,6 +22,7 @@ dependencies {
     implementation("net.fabricmc.fabric-api:fabric-api:${fabricApiVersion}")
 
     implementation("de.tobi:voxelconfig:${voxelConfigVersion}")
+    implementation("de.voxelmap:voxelconfig:1.0.2")
 
     compileOnly("net.fabricmc:sponge-mixin:0.17.3+mixin.0.8.7")
     testImplementation("com.google.code.gson:gson:2.11.0")
@@ -48,6 +50,7 @@ tasks {
     shadowJar {
         dependencies {
             include(dependency("de.tobi:voxelconfig:.*"))
+            include(dependency("de.voxelmap:voxelconfig:.*"))
         }
     }
     

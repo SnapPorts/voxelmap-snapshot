@@ -6,10 +6,13 @@ plugins {
 }
 
 val minecraftVersion by extra { "26.3-rc-2" }
+val minecraftVersion by extra { "26.4-snapshot-1" }
 val forgeVersion by extra { "65.0.0" }
 val neoForgeVersion by extra { "26.2.0.0-beta" }
 val fabricVersion by extra { "0.19.5" }
 val fabricApiVersion by extra { "0.160.4+26.3" }
+val fabricVersion by extra { "0.16.10" }
+val fabricApiVersion by extra { "0.161.1+26.4" }
 val modMenuVersion by extra { "20.0.1" }
 val paperApiVersion by extra { "[26.2.build,)" }
 val voxelMapVersion by extra { "1.16.11" }
